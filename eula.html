@@ -1,36 +1,257 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Checklist Pro for YouTrack — EULA</title>
-<style>
-body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;max-width:900px;margin:0 auto;padding:40px 24px;color:#0F2242}
-h1,h2{font-family:"IBM Plex Mono",ui-monospace,monospace}
-a{color:#2A5BD7}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>End User License Agreement | Checklist Pro Labs</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --ink: #0F2242;
+            --paper: #FFFFFF;
+            --paper-raised: #F3F7FC;
+            --signal: #2563EB;
+            --signal-soft: #DCEAFE;
+            --rule: #D9E2EC;
+            --ink-soft: #51678C
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            scroll-behavior: smooth
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #fff 0%, #f7faff 100%);
+            color: var(--ink);
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased
+        }
+
+        a {
+            color: var(--signal)
+        }
+
+        a:hover {
+            text-decoration: none
+        }
+
+        .shell {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 28px 22px 70px
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            padding: 10px 0 28px;
+            border-bottom: 1px solid var(--rule)
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--ink);
+            text-decoration: none;
+            font-family: "IBM Plex Mono", ui-monospace, monospace;
+            font-weight: 600
+        }
+
+        .mark {
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--ink);
+            border-radius: 6px;
+            position: relative;
+            flex: 0 0 auto
+        }
+
+        .mark:after {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 4px;
+            width: 6px;
+            height: 10px;
+            border-right: 2px solid var(--signal);
+            border-bottom: 2px solid var(--signal);
+            transform: rotate(45deg)
+        }
+
+        .back {
+            font-size: 13px;
+            text-decoration: none;
+            color: var(--ink-soft)
+        }
+
+        .hero {
+            padding: 54px 0 34px
+        }
+
+        .eyebrow {
+            font-family: "IBM Plex Mono", ui-monospace, monospace;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--signal);
+            font-size: 12px;
+            margin: 0 0 12px
+        }
+
+        h1,
+        h2 {
+            font-family: "IBM Plex Mono", ui-monospace, monospace;
+            line-height: 1.2;
+            letter-spacing: -.02em
+        }
+
+        h1 {
+            font-size: clamp(30px, 5vw, 46px);
+            margin: 0 0 12px
+        }
+
+        .hero p {
+            color: var(--ink-soft);
+            margin: 0;
+            max-width: 68ch
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid var(--rule);
+            border-radius: 16px;
+            padding: 30px 32px;
+            box-shadow: 0 18px 45px -35px rgba(15, 34, 66, .5)
+        }
+
+        h2 {
+            font-size: 20px;
+            margin: 30px 0 10px;
+            padding-top: 8px
+        }
+
+        p {
+            margin: 10px 0
+        }
+
+        ul {
+            padding-left: 22px
+        }
+
+        li {
+            margin: 6px 0
+        }
+
+        .notice {
+            display: flex;
+            gap: 12px;
+            background: var(--paper-raised);
+            border: 1px solid var(--signal-soft);
+            border-radius: 12px;
+            padding: 14px 16px;
+            margin: 0 0 22px;
+            color: var(--ink-soft);
+            font-size: 14px
+        }
+
+        .notice strong {
+            color: var(--ink)
+        }
+
+        .contact {
+            margin-top: 34px;
+            padding-top: 22px;
+            border-top: 1px solid var(--rule)
+        }
+
+        footer {
+            margin-top: 24px;
+            text-align: center;
+            color: var(--ink-soft);
+            font-size: 12px
+        }
+
+        @media(max-width:600px) {
+            .shell {
+                padding: 18px 16px 50px
+            }
+
+            .topbar {
+                align-items: flex-start
+            }
+
+            .card {
+                padding: 23px 20px
+            }
+
+            .hero {
+                padding: 38px 0 24px
+            }
+        }
+    </style>
 </head>
+
 <body>
-<h1>Checklist Pro for YouTrack — End User License Agreement</h1>
-<p><strong>Developer:</strong> Raj Kumar Prasad, operating under Checklist Pro Labs</p>
-<p>Checklist Pro for YouTrack is licensed, not sold. This software is independently developed and is not owned, operated, sponsored, endorsed, or maintained by JetBrains.</p>
-<h2>License</h2>
-<p>Subject to these terms and any applicable Marketplace purchase terms, you receive a limited license to use the plugin in accordance with the applicable YouTrack and JetBrains Marketplace environment.</p>
-<h2>Ownership</h2>
-<p>The plugin and its intellectual property remain the property of the Developer. Except where applicable law requires otherwise, you may not redistribute, resell, sublicense, reverse engineer, or otherwise misuse the plugin.</p>
-<h2>Pricing and Marketplace Terms</h2>
-<p>Applicable pricing, subscription periods, renewal terms, user limits, and purchase conditions are presented through the applicable JetBrains Marketplace purchase process. Pricing may change independently of this agreement.</p>
-<h2>Data and Operation</h2>
-<p>The plugin is designed to operate within the customer's YouTrack environment. The Developer does not intentionally collect or store customer checklist data on Developer-controlled servers.</p>
-<h2>Warranty and Liability</h2>
-<p>To the maximum extent permitted by applicable law, the plugin is provided subject to the limitations, exclusions, support terms, warranty provisions, and liability limitations applicable to the license. Mandatory legal and consumer rights are preserved.</p>
-<h2>Termination</h2>
-<p>The license may terminate in accordance with these terms and applicable Marketplace purchase conditions. You may stop using and uninstall the plugin at any time.</p>
-<h2>Third-Party Software and JetBrains Marketplace</h2>
-<p>YouTrack and JetBrains Marketplace are third-party services/platforms. Checklist Pro for YouTrack is independent from JetBrains and is not affiliated with or endorsed by JetBrains.</p>
-<h2>Governing Law</h2>
-<p>Any governing-law and dispute provisions applicable to the license are subject to mandatory rights and applicable law.</p>
-<h2>Contact</h2>
-<p><a href="mailto:checklistprolabs@gmail.com">checklistprolabs@gmail.com</a></p>
+    <div class="shell">
+        <header class="topbar"><a class="brand" href="index.html"><span class="mark"></span>Checklist Pro Labs</a><a
+                class="back" href="index.html">← Back to website</a></header>
+        <section class="hero">
+            <p class="eyebrow">Legal</p>
+            <h1>End User License Agreement</h1>
+            <p><strong>Checklist Pro for YouTrack</strong> is an independently developed YouTrack add-on operated under
+                Checklist Pro Labs.</p>
+        </section>
+        <main class="card">
+            <div class="notice"><strong>Developer:</strong><span>Raj Kumar Prasad, operating under Checklist Pro
+                    Labs.</span></div>
+            <h2>License</h2>
+            <p>Checklist Pro for YouTrack is licensed, not sold. Subject to these terms and any applicable Marketplace
+                purchase terms, you receive a limited license to use the plugin in accordance with the applicable
+                YouTrack and JetBrains Marketplace environment.</p>
+            <h2>Ownership</h2>
+            <p>The plugin and its intellectual property remain the property of the Developer. Except where applicable
+                law requires otherwise, you may not redistribute, resell, sublicense, reverse engineer, or otherwise
+                misuse the plugin.</p>
+            <h2>Pricing and Marketplace Terms</h2>
+            <p>Applicable pricing, subscription periods, renewal terms, user limits, and purchase conditions are
+                presented through the applicable JetBrains Marketplace purchase process. Pricing may change
+                independently of this agreement.</p>
+            <h2>Data and Operation</h2>
+            <p>The plugin is designed to operate within the customer's YouTrack environment. The Developer does not
+                intentionally collect or store customer checklist data on Developer-controlled servers.</p>
+            <h2>Warranty and Liability</h2>
+            <p>To the maximum extent permitted by applicable law, the plugin is provided subject to the limitations,
+                exclusions, support terms, warranty provisions, and liability limitations applicable to the license.
+                Mandatory legal and consumer rights are preserved.</p>
+            <h2>Termination</h2>
+            <p>The license may terminate in accordance with these terms and applicable Marketplace purchase conditions.
+                You may stop using and uninstall the plugin at any time.</p>
+            <h2>Third-Party Software and JetBrains Marketplace</h2>
+            <p>YouTrack and JetBrains Marketplace are third-party services/platforms. Checklist Pro for YouTrack is
+                independent from JetBrains and is not affiliated with or endorsed by JetBrains.</p>
+            <h2>Governing Law</h2>
+            <p>Any governing-law and dispute provisions applicable to the license are subject to mandatory rights and
+                applicable law.</p>
+            <div class="contact"><strong>Questions?</strong><br><a
+                    href="mailto:checklistprolabs@gmail.com">checklistprolabs@gmail.com</a></div>
+        </main>
+        <footer>Checklist Pro for YouTrack · An independent add-on for YouTrack · Not affiliated with or endorsed by
+            JetBrains.</footer>
+    </div>
 </body>
+
 </html>
