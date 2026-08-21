@@ -80,16 +80,11 @@
     font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 16px;
     letter-spacing: -0.01em; color: var(--ink); text-decoration: none;
   }
-  .brand-mark {
-    width: 22px; height: 22px; border: 2px solid var(--ink); border-radius: 5px;
-    position: relative; flex-shrink: 0; transition: transform .4s var(--ease), border-color .3s ease;
+  .brand-logo {
+    width: 22px; height: 22px; flex-shrink: 0; display: block;
+    transition: transform .4s var(--ease);
   }
-  .brand:hover .brand-mark { transform: rotate(-8deg) scale(1.06); border-color: var(--signal); }
-  .brand-mark::after {
-    content: ""; position: absolute; left: 4px; top: 3px; width: 5px; height: 9px;
-    border-right: 2px solid var(--signal); border-bottom: 2px solid var(--signal);
-    transform: rotate(45deg);
-  }
+  .brand:hover .brand-logo { transform: rotate(-8deg) scale(1.06); }
   nav.links { display: flex; gap: 28px; font-size: 14px; position: relative; }
   nav.links a {
     color: var(--ink-soft); text-decoration: none; font-weight: 500;
@@ -480,6 +475,15 @@
     .marketplace-grid { grid-template-columns: 1fr; }
   }
 
+  /* ---------- Contact ---------- */
+  .contact-form-wrap {
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 30px;
+    max-width: 640px;
+  }
+
   /* ---------- Footer ---------- */
   footer.site { border-top: 1px solid var(--rule); padding: 40px 0 50px; }
   .footer-grid { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
@@ -496,7 +500,7 @@
 <header class="site" id="siteHeader">
   <div class="nav">
     <a class="brand" href="#top">
-      <span class="brand-mark" aria-hidden="true"></span>
+      <img class="brand-logo" src="checklist-pro-logo.svg" alt="" />
       Checklist Pro Labs
     </a>
     <nav class="links">
@@ -504,6 +508,7 @@
       <a class="nav-link" href="#features">Features</a>
       <a class="nav-link" href="#install">Install</a>
       <a class="nav-link" href="#marketplace">Marketplace</a>
+      <a class="nav-link" href="#contact">Contact Us</a>
       <span class="nav-indicator" id="navIndicator"></span>
     </nav>
     <a class="nav-cta magnetic" href="#marketplace">Get it on Marketplace</a>
@@ -716,13 +721,33 @@
     </div>
   </section>
 
+  <hr class="rule" />
+
+  <!-- ---------- CONTACT ---------- -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="section-eyebrow">Get in touch</p>
+        <h2>Contact Us</h2>
+        <p class="section-desc">
+          Questions, bug reports, or feature requests &mdash; send them straight to us
+          below and we'll get back to you.
+        </p>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <script id="ffe2b803-3dfb-42fb-9df9-e5d248f1254d" data-yt-url="https://checklistprolabs.youtrack.cloud" src="https://checklistprolabs.youtrack.cloud/static/simplified/form/form-entry.js" data-theme="light" data-lang="en"></script>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site">
   <div class="wrap footer-grid">
     <div>
       <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true"></span>
+        <img class="brand-logo" src="checklist-pro-logo.svg" alt="" />
         Checklist Pro Labs
       </a>
       <p class="footer-note">An independent add-on for YouTrack.<br />Not affiliated with or endorsed by JetBrains.</p>
@@ -731,7 +756,7 @@
       <a href="#features">Features</a>
       <a href="#install">Getting started</a>
       <a href="#marketplace">Marketplace</a>
-      <a href="mailto:checklistprolabs@gmail.com">Support</a>
+      <a href="#contact">Contact Us</a>
       <a href="eula.html">EULA</a>
       <a href="privacy.html">Privacy policy</a>
     </div>
